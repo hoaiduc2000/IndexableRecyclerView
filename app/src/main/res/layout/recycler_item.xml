@@ -18,7 +18,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_contact"
+            android:id="@+id/text_view_contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/hint"
@@ -32,7 +32,7 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/item_image"
+        android:id="@+id/image_view_item"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/_60dp"
         android:layout_margin="@dimen/_10dp" />

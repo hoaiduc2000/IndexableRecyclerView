@@ -75,11 +75,11 @@ public class SectionedRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
 
     public static class SectionViewHolder extends RecyclerView.ViewHolder {
 
-        public TextView title;
+        public TextView mTitle;
 
         public SectionViewHolder(View view, int resourceId) {
             super(view);
-            title = (TextView) view.findViewById(resourceId);
+            mTitle = (TextView) view.findViewById(resourceId);
         }
     }
 
@@ -96,7 +96,7 @@ public class SectionedRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder sectionViewHolder, int position) {
         if (isSectionHeaderPosition(position)) {
-            ((SectionViewHolder) sectionViewHolder).title.setText(mSections.get(position).title);
+            ((SectionViewHolder) sectionViewHolder).mTitle.setText(mSections.get(position).title);
         } else {
             mBaseAdapter.onBindViewHolder(sectionViewHolder, sectionedPositionToPosition(position));
         }

@@ -121,8 +121,8 @@ public class IndexableRecyclerViewAdapter extends RecyclerView.Adapter implement
 
         public BannerViewHolder(View itemView) {
             super(itemView);
-            mImageView = (ImageView) itemView.findViewById(R.id.item_image);
-            mTextView = (TextView) itemView.findViewById(R.id.tv_contact);
+            mImageView = (ImageView) itemView.findViewById(R.id.image_view_item);
+            mTextView = (TextView) itemView.findViewById(R.id.text_view_contact);
         }
     }
 
