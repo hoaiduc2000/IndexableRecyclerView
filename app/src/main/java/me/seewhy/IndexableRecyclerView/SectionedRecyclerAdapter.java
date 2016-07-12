@@ -153,7 +153,7 @@ public class SectionedRecyclerAdapter extends RecyclerView.Adapter<RecyclerView.
                 mKeyPositionMap.put(title.charAt(0) - 'A' + 1, section.sectionedPosition);
             } else {
                 //如果不是字母，用 0 表示
-                mKeyPositionMap.put(10, 0);
+                mKeyPositionMap.put(0, 0);
             }
         }
 

@@ -80,7 +80,7 @@ public class LetterBar extends View {
         super.onDraw(canvas);
 
         for (int i = 0; i < SECTION_SIZE; ++i) {
-            canvas.drawText(mSections.get(i), mCenter, mPaddingTop + mItemHeight * (i+1), mTextPaint);
+            canvas.drawText(mSections.get(i), mCenter, mPaddingTop + mItemHeight * (i + 1), mTextPaint);
         }
     }
 
