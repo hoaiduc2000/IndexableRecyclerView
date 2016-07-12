@@ -51,15 +51,12 @@ public class IndexableRecyclerView extends RelativeLayout {
     }
 
     public void setAdapter(IndexableRecyclerViewAdapter adapter) {
-        mRecyclerAdapter = new SectionedRecyclerAdapter(mContext, R.layout.title_item, R.id.tvName, adapter);
+        mRecyclerAdapter = new SectionedRecyclerAdapter(mContext, R.layout.title_item, R.id.text_view_title, adapter);
         mRecyclerView.setAdapter(mRecyclerAdapter);
     }
 
     private void init(AttributeSet attrs, int defStyleAttr) {
-//        TypedArray typedArray = mContext.obtainStyledAttributes(attrs, R.styleable.IndexableRecyclerView, defStyleAttr, 0);
-//        mColumnNumber = typedArray.getInteger(R.styleable.IndexableRecyclerView_recyclerColumns, DEFAULT_COLUMN_NUMBER);
-//        typedArray.recycle();
-//
+
 
         final LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(mContext);
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
